@@ -2,7 +2,7 @@ const express = require("express");
 
 const {
   createContactMessage,
-} = require("../Controllers/Contactcontroller");
+} = require("../Controllers/ContactController");
 
 const router = express.Router();
 

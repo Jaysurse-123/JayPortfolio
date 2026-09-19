@@ -7,7 +7,7 @@ const express = require("express");
 const cors = require("cors");
 
 const connectDB = require("./Config/Db");
-const contactRoutes = require("./Routes/Contactroutes");
+const ContactRoutes = require("./Routes/ContactRoutes");
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 
 connectDB();
 
-app.use("/api/contact", contactRoutes);
+app.use("/api/contact", ContactRoutes);
 
 app.get("/", (req, res) => {
   res.send("Jay Portfolio Backend is Running!");
