@@ -1,0 +1,664 @@
+/* =====================================================
+   PROJECTS PAGE
+===================================================== */
+
+.projects-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(0, 200, 255, 0.06),
+      transparent 28%
+    ),
+    #05090f;
+
+  color: #f5f8ff;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.projects-header {
+  min-height: 330px;
+
+  padding: 80px 6% 60px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border-bottom: 1px solid #17202b;
+}
+
+.projects-line {
+  width: 55px;
+  height: 2px;
+
+  background: #00c8ff;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.7);
+}
+
+.projects-label {
+  color: #00c8ff;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 18px;
+}
+
+.projects-header h1 {
+  color: #f5f8ff;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+
+  line-height: 1.05;
+
+  margin: 0;
+}
+
+.projects-header h1 span {
+  color: #00c8ff;
+}
+
+.projects-subtitle {
+  max-width: 600px;
+
+  margin-top: 20px;
+
+  color: #71859a;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   PROJECT CONTENT
+===================================================== */
+
+.projects-content {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 90px 6%;
+}
+
+
+/* =====================================================
+   PROJECT CARD
+===================================================== */
+
+.project-card {
+  position: relative;
+
+  margin-bottom: 25px;
+
+  padding: 35px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0a1119,
+      #070c12
+    );
+
+  border: 1px solid #182633;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s,
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #1c6b91;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(0, 200, 255, 0.04);
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.project-number {
+  position: absolute;
+
+  top: 25px;
+  right: 30px;
+
+  color: #243746;
+
+  font-size: 45px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.project-main {
+  display: grid;
+
+  grid-template-columns: 0.7fr 1.3fr;
+
+  align-items: center;
+
+  gap: 55px;
+}
+
+
+/* =====================================================
+   PROJECT VISUAL
+===================================================== */
+
+.project-visual {
+  height: 280px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #142b39;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0, 200, 255, 0.12),
+      transparent 55%
+    ),
+    #061019;
+}
+
+.project-icon {
+  width: 130px;
+  height: 130px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #00c8ff;
+
+  font-size: 38px;
+
+  font-weight: 800;
+
+  background:
+    radial-gradient(
+      circle,
+      #102d47,
+      #07121d 70%
+    );
+
+  border: 2px solid #00c8ff;
+
+  box-shadow:
+    0 0 30px rgba(0, 200, 255, 0.3),
+    inset 0 0 30px rgba(0, 200, 255, 0.08);
+
+  z-index: 2;
+}
+
+
+/* =====================================================
+   CONNECTSPHERE VISUAL
+===================================================== */
+
+.project-orbit {
+  position: absolute;
+
+  border: 1px dashed rgba(0, 200, 255, 0.35);
+
+  border-radius: 50%;
+}
+
+.orbit-a {
+  width: 210px;
+  height: 90px;
+
+  transform: rotate(35deg);
+}
+
+.orbit-b {
+  width: 240px;
+  height: 110px;
+
+  transform: rotate(-35deg);
+}
+
+
+/* =====================================================
+   RAILWAY VISUAL
+===================================================== */
+
+.railway-visual {
+  background:
+    linear-gradient(
+      rgba(0, 200, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 200, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    #061019;
+
+  background-size: 25px 25px;
+}
+
+.project-grid-lines {
+  position: absolute;
+
+  width: 70%;
+  height: 1px;
+
+  background: #1a526c;
+
+  box-shadow:
+    0 40px #1a526c,
+    0 -40px #1a526c;
+}
+
+
+/* =====================================================
+   FAKE NEWS VISUAL
+===================================================== */
+
+.fake-news-visual {
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0, 200, 255, 0.13),
+      transparent 55%
+    ),
+    #061019;
+}
+
+.scan-line {
+  position: absolute;
+
+  width: 75%;
+  height: 1px;
+
+  background: #00c8ff;
+
+  opacity: 0.35;
+
+  box-shadow:
+    0 -35px rgba(0, 200, 255, 0.25),
+    0 35px rgba(0, 200, 255, 0.25);
+}
+
+
+/* =====================================================
+   ACCIDENT VISUAL
+===================================================== */
+
+.accident-visual {
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0, 200, 255, 0.12),
+      transparent 60%
+    ),
+    #061019;
+}
+
+.signal {
+  position: absolute;
+
+  border: 1px solid rgba(0, 200, 255, 0.35);
+
+  border-radius: 50%;
+
+  animation: signalPulse 2.5s infinite;
+}
+
+.signal-one {
+  width: 160px;
+  height: 160px;
+}
+
+.signal-two {
+  width: 220px;
+  height: 220px;
+
+  animation-delay: 0.5s;
+}
+
+.signal-three {
+  width: 280px;
+  height: 280px;
+
+  animation-delay: 1s;
+}
+
+@keyframes signalPulse {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: scale(1.1);
+  }
+}
+
+
+/* =====================================================
+   PROJECT INFO
+===================================================== */
+
+.project-info {
+  padding-right: 35px;
+}
+
+.project-type {
+  color: #00c8ff;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+
+  margin-bottom: 12px;
+}
+
+.project-info h2 {
+  color: #edf5fc;
+
+  font-size: clamp(28px, 3vw, 42px);
+
+  line-height: 1.1;
+
+  letter-spacing: -2px;
+
+  margin-bottom: 18px;
+}
+
+.project-info h2 span {
+  color: #00c8ff;
+}
+
+.project-description {
+  max-width: 620px;
+
+  color: #71859a;
+
+  font-size: 13px;
+
+  line-height: 1.85;
+
+  margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   TECHNOLOGIES
+===================================================== */
+
+.project-tech {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 25px;
+}
+
+.project-tech span {
+  padding: 7px 10px;
+
+  color: #7594a9;
+
+  font-size: 9px;
+
+  background: #09141d;
+
+  border: 1px solid #1a2f3d;
+
+  border-radius: 5px;
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+.project-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.project-links a {
+  color: #00c8ff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  letter-spacing: 0.5px;
+}
+
+.project-status {
+  padding: 6px 10px;
+
+  color: #59768a;
+
+  font-size: 9px;
+
+  border: 1px solid #1a303e;
+
+  border-radius: 20px;
+}
+
+.project-status.completed {
+  color: #61a2c4;
+
+  border-color: #20506a;
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.projects-bottom {
+  padding: 90px 6% 120px;
+
+  text-align: center;
+
+  border-top: 1px solid #17202b;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0, 200, 255, 0.05),
+      transparent 35%
+    );
+}
+
+.projects-bottom > p:first-child {
+  color: #00c8ff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+.projects-bottom h2 {
+  color: #edf5fc;
+
+  font-size: clamp(35px, 4vw, 50px);
+
+  letter-spacing: -2px;
+
+  margin-bottom: 18px;
+}
+
+.projects-bottom h2 span {
+  color: #00c8ff;
+}
+
+.projects-bottom p:last-child {
+  max-width: 550px;
+
+  margin: auto;
+
+  color: #687e91;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .project-main {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .project-visual {
+    height: 250px;
+  }
+
+  .project-info {
+    padding-right: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .projects-header {
+    min-height: 270px;
+
+    padding: 65px 6% 45px;
+  }
+
+  .projects-header h1 {
+    font-size: 42px;
+
+    letter-spacing: -2px;
+  }
+
+  .projects-subtitle {
+    font-size: 12px;
+  }
+
+  .projects-content {
+    padding: 60px 5%;
+  }
+
+  .project-card {
+    padding: 22px;
+
+    border-radius: 10px;
+  }
+
+  .project-number {
+    top: 18px;
+    right: 20px;
+
+    font-size: 32px;
+  }
+
+  .project-visual {
+    height: 220px;
+  }
+
+  .project-icon {
+    width: 100px;
+    height: 100px;
+
+    font-size: 30px;
+  }
+
+  .project-info h2 {
+    font-size: 28px;
+
+    letter-spacing: -1px;
+  }
+
+  .project-description {
+    font-size: 12px;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+  }
+
+  .projects-bottom {
+    padding: 70px 6% 90px;
+  }
+}

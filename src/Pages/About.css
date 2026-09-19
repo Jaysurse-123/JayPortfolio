@@ -1,0 +1,547 @@
+.about-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 22% 55%,
+      rgba(0, 200, 255, 0.07),
+      transparent 28%
+    ),
+    #05090f;
+
+  color: #f2f7ff;
+}
+
+
+/* HEADER */
+
+.about-header {
+  min-height: 290px;
+
+  padding: 70px 6% 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border-bottom: 1px solid #17202b;
+}
+
+.section-line {
+  width: 55px;
+  height: 2px;
+
+  background: #00c8ff;
+
+  margin-bottom: 18px;
+
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.7);
+}
+
+.about-top-label {
+  color: #00c8ff;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 18px;
+}
+
+.about-header h1 {
+  margin: 0;
+
+  color: #f5f8ff;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+
+  line-height: 1.05;
+}
+
+.about-header h1 span {
+  color: #00c8ff;
+}
+
+.about-subtitle {
+  margin-top: 20px;
+
+  color: #8ea0b7;
+
+  font-size: 16px;
+}
+
+.about-subtitle b {
+  color: #00c8ff;
+
+  margin: 0 10px;
+}
+
+
+/* MAIN */
+
+.about-main {
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 75px 6% 100px;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* VISUAL */
+
+.about-visual {
+  min-height: 560px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* PROFILE */
+
+.about-profile {
+  width: 330px;
+  height: 330px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      #102d47 0%,
+      #081522 45%,
+      #050b12 75%
+    );
+
+  border: 5px solid #00c8ff;
+
+  box-shadow:
+    0 0 25px rgba(0, 200, 255, 0.7),
+    0 0 70px rgba(0, 200, 255, 0.18),
+    inset 0 0 60px rgba(0, 140, 255, 0.12);
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.profile-j,
+.profile-s {
+  font-size: 82px;
+
+  font-weight: 800;
+
+  letter-spacing: -8px;
+}
+
+.profile-j {
+  color: white;
+}
+
+.profile-s {
+  color: #00c8ff;
+}
+
+
+/* ORBITS */
+
+.orbit {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px dashed rgba(0, 200, 255, 0.45);
+}
+
+.orbit-one {
+  width: 390px;
+  height: 390px;
+
+  transform: rotate(25deg);
+}
+
+.orbit-two {
+  width: 430px;
+  height: 430px;
+
+  transform: rotate(-35deg);
+
+  border-color: rgba(0, 150, 255, 0.2);
+}
+
+
+/* FLOATING CARDS */
+
+.about-floating-card {
+  position: absolute;
+
+  min-width: 205px;
+
+  padding: 14px 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  background: rgba(7, 18, 30, 0.92);
+
+  border: 1px solid #18527b;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(10px);
+
+  z-index: 5;
+}
+
+.about-floating-card strong {
+  display: block;
+
+  color: #eaf7ff;
+
+  font-size: 14px;
+
+  margin-bottom: 4px;
+}
+
+.about-floating-card small {
+  display: block;
+
+  color: #6198c0;
+
+  font-size: 11px;
+}
+
+.floating-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #00c8ff;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  border: 1px solid #17618c;
+
+  border-radius: 8px;
+
+  background: #071522;
+}
+
+.ai-card {
+  top: 35px;
+  left: 0;
+}
+
+.developer-card {
+  top: 115px;
+  right: -5px;
+}
+
+.data-card {
+  bottom: 70px;
+  left: 5px;
+}
+
+
+/* FUTURE */
+
+.future-text {
+  position: absolute;
+
+  bottom: 5px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 100%;
+
+  text-align: center;
+
+  color: #58718b;
+
+  font-size: 13px;
+
+  font-style: italic;
+
+  white-space: nowrap;
+}
+
+.future-text span {
+  color: #00c8ff;
+
+  margin: 0 8px;
+}
+
+
+/* RIGHT CONTENT */
+
+.about-info {
+  padding: 20px 0;
+}
+
+.about-label {
+  color: #00c8ff;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 18px;
+}
+
+.about-info h2 {
+  color: #f1f6ff;
+
+  font-size: clamp(32px, 3.4vw, 47px);
+
+  line-height: 1.15;
+
+  letter-spacing: -2px;
+
+  margin: 0 0 28px;
+}
+
+.about-info h2 span {
+  color: #00c8ff;
+}
+
+.about-description {
+  color: #91a1b4;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+
+  max-width: 650px;
+
+  margin-bottom: 18px;
+}
+
+
+/* AREAS */
+
+.about-areas {
+  margin-top: 40px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.area-item {
+  text-align: center;
+}
+
+.area-icon {
+  width: 54px;
+  height: 54px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #12638d;
+
+  border-radius: 50%;
+
+  color: #00c8ff;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  background: #07121e;
+}
+
+.area-item h3 {
+  margin-top: 13px;
+
+  margin-bottom: 5px;
+
+  color: #e7f1fb;
+
+  font-size: 15px;
+}
+
+.area-item p {
+  color: #5885a6;
+
+  font-size: 11px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .about-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-visual {
+    min-height: 530px;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .about-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-areas {
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .about-header {
+    min-height: 240px;
+
+    padding: 60px 5% 40px;
+  }
+
+  .about-header h1 {
+    font-size: 42px;
+  }
+
+  .about-subtitle {
+    font-size: 13px;
+  }
+
+  .about-main {
+    padding: 55px 5% 75px;
+  }
+
+  .about-visual {
+    min-height: 440px;
+  }
+
+  .about-profile {
+    width: 230px;
+    height: 230px;
+  }
+
+  .profile-j,
+  .profile-s {
+    font-size: 60px;
+  }
+
+  .orbit-one {
+    width: 270px;
+    height: 270px;
+  }
+
+  .orbit-two {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-floating-card {
+    min-width: 155px;
+
+    padding: 9px 11px;
+  }
+
+  .about-floating-card strong {
+    font-size: 11px;
+  }
+
+  .about-floating-card small {
+    font-size: 9px;
+  }
+
+  .floating-icon {
+    width: 30px;
+    height: 30px;
+
+    font-size: 11px;
+  }
+
+  .ai-card {
+    left: 0;
+    top: 15px;
+  }
+
+  .developer-card {
+    right: 0;
+    top: 90px;
+  }
+
+  .data-card {
+    left: 0;
+    bottom: 50px;
+  }
+
+  .future-text {
+    font-size: 9px;
+  }
+
+  .about-info h2 {
+    font-size: 32px;
+  }
+
+  .about-description {
+    font-size: 13px;
+  }
+
+  .about-areas {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px 10px;
+  }
+}
