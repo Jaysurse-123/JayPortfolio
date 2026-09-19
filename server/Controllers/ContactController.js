@@ -1,4 +1,4 @@
-const ContactMessage = require("../Models/Contactmessage");
+const ContactMessage = require("../Models/ContactMessage");
 const nodemailer = require("nodemailer");
 
 // Gmail transporter
